@@ -95,7 +95,7 @@ export function LandingPageComponent() {
             transition={{ duration: 10, ease: "easeOut" }}
           >
             <Image
-              src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="https://images.unsplash.com/photo-1526948531399-320e7e40f0ca?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Modern building"
               layout="fill"
               objectFit="cover"
@@ -141,16 +141,29 @@ export function LandingPageComponent() {
               className="text-4xl sm:text-5xl font-bold mb-10 text-center"
               {...fadeInUp}
             >
-              About Us
+              Who We Are
             </motion.h2>
             <motion.p
               className="text-xl mb-16 max-w-3xl mx-auto text-center text-gray-600"
               {...fadeInUp}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              As Africa&apos;s fastest-growing real estate marketing group, we
-              connect developers with genuine buyers and offer realtors
-              unprecedented opportunities for wealth creation.
+              At The Alliance Realtors Group, we are a league of top-performing
+              independent real estate marketers and entrepreneurs dedicated to
+              transforming the real estate industry. We offer cutting-edge sales
+              and marketing solutions to reliable real estate developers,
+              facilitating massive sales and wealth creation for our realtors.
+            </motion.p>
+            <motion.p
+              className="text-xl mb-16 max-w-3xl mx-auto text-center text-gray-600"
+              {...fadeInUp}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              As Africa’s fastest-growing real estate marketing group, our
+              impact continues to expand, earning us respect and accolades
+              across the continent. From helping developers accelerate their
+              sales to empowering our network of realtors, we are just getting
+              started.
             </motion.p>
             <div className="overflow-hidden" ref={emblaRef}>
               <div className="flex">
@@ -158,14 +171,16 @@ export function LandingPageComponent() {
                   {
                     title: "Our Mission",
                     content:
-                      "To provide cutting-edge sales and marketing solutions to reliable developers, enabling realtors to create wealth through access to genuine real estate products.",
+                      "Providing local and global market access to genuine real estate opportunities.",
+                    contentTwo:
+                      "Building and empowering the largest community of independent real estate marketers and entrepreneurs, creating wealth and success stories that transcend boundaries.",
                     image:
                       "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                   },
                   {
                     title: "Our Vision",
                     content:
-                      "To become Africa's leading real estate marketing company by team size, sales volume, and impact.",
+                      "To become a leading real estate marketing company of global repute.",
                     image:
                       "https://images.unsplash.com/photo-1512699355324-f07e3106dae5?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                   },
@@ -196,6 +211,13 @@ export function LandingPageComponent() {
                       </CardHeader>
                       <CardContent>
                         <p className="text-gray-600">{item.content}</p>
+                        {item.contentTwo ? (
+                          <p className="text-gray-600 mt-2">
+                            {item.contentTwo}
+                          </p>
+                        ) : (
+                          ""
+                        )}
                       </CardContent>
                     </Card>
                   </div>
@@ -224,7 +246,7 @@ export function LandingPageComponent() {
               className="text-4xl sm:text-5xl font-bold mb-16 text-center"
               {...fadeInUp}
             >
-              Our Services
+              Service Highlights
             </motion.h2>
             <motion.div
               className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8"
@@ -235,35 +257,35 @@ export function LandingPageComponent() {
                 {
                   title: "Real Estate Sales & Marketing",
                   description:
-                    "Tailored solutions to help developers achieve sales goals faster through digital and on-ground efforts.",
+                    "We provide comprehensive sales and marketing solutions that help real estate developers reach their target markets and close deals faster. From digital marketing strategies to on-ground sales efforts, we tailor our services to meet the specific needs of each project.",
                   image:
                     "https://images.unsplash.com/photo-1616587894417-b93dfd1f700a?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                 },
                 {
                   title: "Training & Development",
                   description:
-                    "Extensive programs equipping realtors with skills to thrive in the competitive African market.",
+                    "We offer extensive training programs for independent real estate marketers, empowering them with the skills and knowledge needed to succeed. Our training covers everything from sales techniques to understanding the local real estate market, ensuring our marketers are always ahead of the competition.",
                   image:
                     "https://images.unsplash.com/photo-1573496358773-bdcdbd984982?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                 },
                 {
                   title: "Access to Genuine Properties",
                   description:
-                    "Partnerships with reputable developers ensure access to high-quality real estate products.",
+                    "We partner exclusively with reputable developers to provide our network of marketers and clients with access to genuine, high-quality real estate products. This ensures trust and transparency throughout the entire sales process.",
                   image:
                     "https://images.unsplash.com/photo-1527665830090-864a163d49ab?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                 },
                 {
                   title: "Global Market Reach",
                   description:
-                    "Extending marketing efforts beyond local markets to reach global investors.",
+                    "Our marketing strategies extend beyond local boundaries. By leveraging global platforms and networks, we ensure that African real estate products reach both local and international investors, maximizing exposure and sales potential.",
                   image:
                     "https://images.unsplash.com/photo-1516738901171-8eb4fc13bd20?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                 },
                 {
                   title: "Wealth Creation Opportunities",
                   description:
-                    "Rewarding commission structure and access to high-demand properties for sustainable careers.",
+                    "Our unique business model allows independent real estate marketers to build successful, sustainable careers by offering them access to high-demand properties and rewarding commission structures and performance benefits.",
                   image:
                     "https://images.unsplash.com/photo-1678693362793-e2fffac536d0?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                 },
@@ -299,7 +321,7 @@ export function LandingPageComponent() {
               className="text-4xl sm:text-5xl font-bold mb-16 text-center"
               {...fadeInUp}
             >
-              Why Choose The Alliance Africa?
+              Why Partner with The Alliance Realtors Group?
             </motion.h2>
             <motion.div
               className="grid sm:grid-cols-2 gap-8"
@@ -310,28 +332,28 @@ export function LandingPageComponent() {
                 {
                   title: "Expertise in Real Estate Marketing",
                   description:
-                    "Unmatched insights and strategies for extraordinary sales results.",
+                    "With a deep understanding of the real estate landscape in Nigeria, we provide our partners with the strategic insights and marketing power they need to achieve extraordinary results.",
                   image:
                     "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                 },
                 {
                   title: "Wealth Creation for Realtors",
                   description:
-                    "Best training, resources, and market access for lasting success.",
+                    "Our network of independent marketers benefits from industry-leading training, resources, and market access, enabling them to generate wealth and create success stories in the real estate sector.",
                   image:
                     "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                 },
                 {
                   title: "Developer-Centric Solutions",
                   description:
-                    "Connecting developers with genuine buyers locally and globally.",
+                    "We focus on driving sales for real estate developers by connecting them with genuine buyers, both locally and globally. Our sales systems are designed to maximize results.",
                   image:
                     "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                 },
                 {
-                  title: "Proven Track Record",
+                  title: "A Reputation for Growth",
                   description:
-                    "Rapid growth and success make us the go-to partner across Africa.",
+                    "As Africa’s fastest-growing real estate marketing group, we bring momentum and energy to every partnership, fueling growth for both our team members and developers.",
                   image:
                     "https://images.unsplash.com/photo-1626695436755-3e288720849c?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                 },
@@ -419,6 +441,66 @@ export function LandingPageComponent() {
                   </CardHeader>
                 </Card>
               ))}
+            </motion.div>
+          </div>
+        </section>
+
+        <section id="call-to-action" className="py-24">
+          <div className="container mx-auto px-4 sm:px-6">
+            <motion.h2
+              className="text-4xl sm:text-5xl font-bold mb-16 text-center"
+              {...fadeInUp}
+            >
+              Join the Movement
+            </motion.h2>
+            <motion.div
+              className="max-w-4xl mx-auto text-center"
+              {...fadeInUp}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              <p className="text-xl text-gray-600 mb-8">
+                Whether you&apos;re a developer looking for unparalleled sales
+                and marketing solutions, or an entrepreneur seeking financial
+                freedom through real estate, The Alliance Realtors Group is the
+                partner you need to succeed.
+              </p>
+              <div className="grid sm:grid-cols-2 gap-8">
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-2xl font-bold text-red-600">
+                      Real Estate Developers
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-600 mb-4">
+                      Let us help you achieve massive sales growth by leveraging
+                      our expertise and extensive marketing network.
+                    </p>
+                    <Button className="bg-red-600 hover:bg-red-700 text-white">
+                      Partner with Us <ArrowRight className="ml-2 w-4 h-4" />
+                    </Button>
+                  </CardContent>
+                </Card>
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-2xl font-bold text-red-600">
+                      Realtors & Entrepreneurs
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-600 mb-4">
+                      Join Africa&apos;s fastest-growing real estate marketing
+                      group and unlock unlimited potential for wealth creation.
+                    </p>
+                    <Button className="bg-red-600 hover:bg-red-700 text-white">
+                      Join Our Network <ArrowRight className="ml-2 w-4 h-4" />
+                    </Button>
+                  </CardContent>
+                </Card>
+              </div>
+              <p className="text-xl text-gray-600 mt-8">
+                Together, we&apos;re shaping the future of real estate.
+              </p>
             </motion.div>
           </div>
         </section>
