@@ -520,11 +520,13 @@ export function LandingPageComponent() {
                       height={300}
                       className="w-full"
                     />
-                    <CardHeader>
-                      <CardTitle className="text-xl font-bold text-white">
+                    <CardHeader className="p-2 md:p-6">
+                      <CardTitle className="text-sm md:text-xl font-bold text-white">
                         {member.name}
                       </CardTitle>
-                      <p className="text-white/80">{member.role}</p>
+                      <p className="text-xs md:text-md text-white/80">
+                        {member.role}
+                      </p>
                     </CardHeader>
                   </Card>
                 ))}
