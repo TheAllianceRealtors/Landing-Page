@@ -25,6 +25,9 @@ import peterFadare from "@/app/images/peter-fadare.jpeg";
 import ritaNwanga from "@/app/images/rita-nwanga.jpeg";
 import timileyinOni from "@/app/images/timileyin-oni.jpeg";
 import zainabOtubambo from "@/app/images/zainab-otubambo.jpeg";
+import whyJoinUs from "@/app/images/why-join-us.jpg";
+import developerCentric from "@/app/images/developer-centric.jpg";
+import training from "@/app/images/training.jpg";
 
 export function LandingPageComponent() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()]);
@@ -273,8 +276,7 @@ export function LandingPageComponent() {
                     title: "Training & Development",
                     description:
                       "We offer extensive training programs for independent real estate marketers, empowering them with the skills and knowledge needed to succeed. Our training covers everything from sales techniques to understanding the local real estate market, ensuring our marketers are always ahead of the competition.",
-                    image:
-                      "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    image: training,
                   },
                   {
                     title: "Access to Genuine Properties",
@@ -356,15 +358,13 @@ export function LandingPageComponent() {
                     title: "Wealth Creation for Realtors",
                     description:
                       "Our network of independent marketers benefits from industry-leading training, resources, and market access, enabling them to generate wealth and create success stories in the real estate sector.",
-                    image:
-                      "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    image: whyJoinUs,
                   },
                   {
                     title: "Developer-Centric Solutions",
                     description:
                       "We focus on driving sales for real estate developers by connecting them with genuine buyers, both locally and globally. Our sales systems are designed to maximize results.",
-                    image:
-                      "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    image: developerCentric,
                   },
                   {
                     title: "A Reputation for Growth",
