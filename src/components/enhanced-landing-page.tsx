@@ -117,7 +117,7 @@ export function LandingPageComponent() {
               {...fadeInUp}
               transition={{ duration: 0.5, delay: 0.5 }}
             >
-              Welcome to The Alliance Africa
+              Welcome to The Alliance Realtors Group
             </motion.h1>
             <motion.p
               className="text-xl sm:text-2xl mb-10 max-w-2xl mx-auto"
