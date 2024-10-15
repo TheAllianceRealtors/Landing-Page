@@ -427,7 +427,7 @@ export function LandingPageComponent() {
                 across Africa.
               </motion.p>
               <motion.div
-                className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+                className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 md:gap-4 lg:gap-8"
                 {...fadeInUp}
                 transition={{ duration: 0.5, delay: 0.4 }}
               >
@@ -616,7 +616,7 @@ export function LandingPageComponent() {
               Contact Us
             </motion.h2>
             <motion.div
-              className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 md:gap-4 lg:gap-8"
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
               {...fadeInUp}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
