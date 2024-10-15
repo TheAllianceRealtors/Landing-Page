@@ -41,10 +41,11 @@ export function LandingPageComponent() {
       question: "How can I join The Alliance as a realtor?",
       answer: (
         <>
-          Kindly click the link below to join the Alliance realtors group.{" "}
+          Kindly click the link below to join the Alliance realtors group.
+          <br />{" "}
           <Link
             href="https://app.thealliancerealtorsgroup.com"
-            className="text-primary hover:underline"
+            className="text-blue-600 text-underline text-sm hover:underline"
           >
             app.thealliancerealtorsgroup.com
           </Link>
@@ -62,10 +63,10 @@ export function LandingPageComponent() {
         <>
           Our training is available to all realtors who join The Alliance
           Realtors. Kindly click the link below to join the Alliance realtors
-          group.{" "}
+          group. <br />{" "}
           <Link
             href="https://app.thealliancerealtorsgroup.com"
-            className="text-primary hover:underline"
+            className="text-blue-600 text-underline text-sm hover:underline"
           >
             app.thealliancerealtorsgroup.com
           </Link>
@@ -582,7 +583,7 @@ export function LandingPageComponent() {
                     <AccordionTrigger className="text-lg font-semibold">
                       {faq.question}
                     </AccordionTrigger>
-                    <AccordionContent className="text-muted-foreground">
+                    <AccordionContent className="text-white text-lg">
                       {faq.answer}
                     </AccordionContent>
                   </AccordionItem>
