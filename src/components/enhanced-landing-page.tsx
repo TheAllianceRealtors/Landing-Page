@@ -119,7 +119,7 @@ export function LandingPageComponent() {
               {...fadeInUp}
               transition={{ duration: 0.5, delay: 0.7 }}
             >
-              Join Africa's fastest-growing real estate marketing group and
+              Join Africa&apos;s fastest-growing real estate marketing group and
               transform the industry with us.
             </motion.p>
             <motion.div
@@ -142,7 +142,8 @@ export function LandingPageComponent() {
         <Parallax
           bgImage="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=2946&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           strength={500}
-          className="relative bg-cover"
+          bgImageStyle={{ objectFit: "cover", objectPosition: "center" }}
+          className="relative"
         >
           <section id="about" className="py-24">
             <div className="absolute inset-0 bg-black opacity-50"></div>
@@ -187,7 +188,7 @@ export function LandingPageComponent() {
                       content:
                         "Empowering a network of realtors across the continent and fostering growth in Africa's booming real estate sector.",
                       image:
-                        "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                        "https://img.freepik.com/free-photo/young-businessman-holding-disposable-coffee-cup-showing-newspaper-toward-camera_23-2148190726.jpg?t=st=1728976872~exp=1728980472~hmac=e822f8efed76cf5dbc8f2160e40663b594284ece0c569c7aa932ec9f35e026fb&w=2000",
                     },
                   ].map((item, index) => (
                     <div
@@ -243,6 +244,7 @@ export function LandingPageComponent() {
         <Parallax
           bgImage="https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=2901&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           strength={500}
+          bgImageStyle={{ objectFit: "cover", objectPosition: "center" }}
           className="relative bg-cover"
         >
           <section id="services" className="py-24">
@@ -325,6 +327,7 @@ export function LandingPageComponent() {
         <Parallax
           bgImage="https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           strength={500}
+          bgImageStyle={{ objectFit: "cover", objectPosition: "center" }}
           className="relative bg-cover"
         >
           <section id="why-choose-us" className="py-24">
@@ -400,6 +403,7 @@ export function LandingPageComponent() {
         <Parallax
           bgImage="https://images.unsplash.com/photo-1522071901873-411886a10004?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           strength={500}
+          bgImageStyle={{ objectFit: "cover", objectPosition: "center" }}
           className="relative bg-cover"
         >
           <section id="team" className="py-24">
