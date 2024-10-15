@@ -463,7 +463,7 @@ export function LandingPageComponent() {
                 marketing.
               </motion.p>
               <motion.div
-                className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 md:gap-4 lg:gap-8"
+                className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-2 md:gap-4 lg:gap-8"
                 {...fadeInUp}
                 transition={{ duration: 0.5, delay: 0.4 }}
               >
