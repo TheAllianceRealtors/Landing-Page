@@ -614,8 +614,8 @@ export function LandingPageComponent() {
               {[
                 {
                   icon: <Mail className="w-8 h-8 text-red-600" />,
-                  content: "theallianceafrica@gmail.com",
-                  href: "mailto:theallianceafrica@gmail.com",
+                  content: "thealliancerealtorsgroup@gmail.com",
+                  href: "mailto:thealliancerealtorsgroup@gmail.com",
                 },
                 {
                   icon: <Phone className="w-8 h-8 text-red-600" />,
@@ -629,8 +629,8 @@ export function LandingPageComponent() {
                 },
                 {
                   icon: <Instagram className="w-8 h-8 text-red-600" />,
-                  content: "@theallianceafrica",
-                  href: "https://www.instagram.com/theallianceafrica",
+                  content: "@thealliancerealtorsgroup",
+                  href: "https://www.instagram.com/thealliancerealtorsgroup",
                 },
               ].map((item, index) => (
                 <Button
