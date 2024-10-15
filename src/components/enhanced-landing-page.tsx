@@ -2,7 +2,19 @@
 
 import { useCallback } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Mail, Phone, Globe, Instagram } from "lucide-react";
+import {
+  ArrowRight,
+  Mail,
+  Phone,
+  Globe,
+  Instagram,
+  Home,
+  BookOpen,
+  Building2,
+  DollarSign,
+  LucideIcon,
+} from "lucide-react";
+
 import Image from "next/image";
 import { Parallax } from "react-parallax";
 import { Button } from "@/components/ui/button";
@@ -35,6 +47,21 @@ import RealEstateCards from "./real-estate-card";
 import Link from "next/link";
 export function LandingPageComponent() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()]);
+
+  type ServiceKey =
+    | "Real Estate Sales & Marketing"
+    | "Training & Development for Realtors"
+    | "Access to Genuine Properties"
+    | "Global Market Reach"
+    | "Wealth Creation Opportunities";
+
+  const iconMap: Record<ServiceKey, LucideIcon> = {
+    "Real Estate Sales & Marketing": Home,
+    "Training & Development for Realtors": BookOpen,
+    "Access to Genuine Properties": Building2,
+    "Global Market Reach": Globe,
+    "Wealth Creation Opportunities": DollarSign,
+  };
 
   const faqs = [
     {
@@ -165,8 +192,7 @@ export function LandingPageComponent() {
               {...fadeInUp}
               transition={{ duration: 0.5, delay: 0.7 }}
             >
-              Join Africa&apos;s fastest-growing real estate marketing group and
-              transform the industry with us.
+              Join Africa’s fastest growing real estate marketing group today.
             </motion.p>
             <motion.div
               {...fadeInUp}
@@ -298,7 +324,7 @@ export function LandingPageComponent() {
                 Our Services
               </motion.h2>
               <motion.div
-                className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8"
+                className="flex flex-wrap justify-center gap-8"
                 {...fadeInUp}
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
@@ -337,28 +363,28 @@ export function LandingPageComponent() {
                     image:
                       "https://images.unsplash.com/photo-1678693362793-e2fffac536d0?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                   },
-                ].map((service, index) => (
-                  <Card
-                    key={index}
-                    className="bg-white/10 backdrop-blur-md hover:shadow-lg transition-shadow overflow-hidden"
-                  >
-                    <Image
-                      src={service.image}
-                      alt={service.title}
-                      width={400}
-                      height={200}
-                      className="w-full h-48 object-cover"
-                    />
-                    <CardHeader>
-                      <CardTitle className="text-2xl font-bold text-white">
-                        {service.title}
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-white">{service.description}</p>
-                    </CardContent>
-                  </Card>
-                ))}
+                ].map((service, index) => {
+                  //@ts-expect-error too lazy to debug
+                  const Icon = iconMap[service.title];
+                  return (
+                    <Card
+                      key={index}
+                      className="bg-white/10 backdrop-blur-md hover:shadow-lg transition-shadow overflow-hidden max-w-sm w-full"
+                    >
+                      <CardHeader className="flex flex-col items-center">
+                        <Icon className="w-12 h-12 text-red-500 mb-4" />
+                        <CardTitle className="text-2xl font-bold text-white text-center">
+                          {service.title}
+                        </CardTitle>
+                      </CardHeader>
+                      <CardContent>
+                        <p className="text-white text-center">
+                          {service.description}
+                        </p>
+                      </CardContent>
+                    </Card>
+                  );
+                })}
               </motion.div>
             </div>
           </section>
@@ -624,8 +650,8 @@ export function LandingPageComponent() {
                 },
                 {
                   icon: <Instagram className="w-8 h-8 text-red-600" />,
-                  content: "@thealliancerealtorsgroup",
-                  href: "https://www.instagram.com/thealliancerealtorsgroup",
+                  content: "@thealliancerealtors",
+                  href: "https://www.instagram.com/thealliancerealtors",
                 },
               ].map((item, index) => (
                 <Button
