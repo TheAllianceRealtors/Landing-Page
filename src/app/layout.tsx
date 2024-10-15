@@ -14,8 +14,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "The Alliance Africa",
-  description: "The Alliance Africa",
+  title: "The Alliance Realtors Group",
+  description: "The Alliance Realtors Group",
 };
 
 export default function RootLayout({
