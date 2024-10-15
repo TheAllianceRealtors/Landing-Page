@@ -2,7 +2,7 @@
 
 import { useCallback } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Mail, Phone, Globe, Instagram, Link } from "lucide-react";
+import { ArrowRight, Mail, Phone, Globe, Instagram } from "lucide-react";
 import Image from "next/image";
 import { Parallax } from "react-parallax";
 import { Button } from "@/components/ui/button";
@@ -32,7 +32,7 @@ import hero from "@/app/images/hero.jpg";
 import experts from "@/app/images/experts.jpg";
 import impact from "@/app/images/impact.jpg";
 import RealEstateCards from "./real-estate-card";
-
+import Link from "next/link";
 export function LandingPageComponent() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()]);
 
