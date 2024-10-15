@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { ArrowRight, Loader2 } from "lucide-react";
-import { Toaster, toast } from "sonner";
+import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -70,7 +70,6 @@ export default function RealEstateCards() {
 
   return (
     <>
-      <Toaster position="top-center" />
       <div className="grid sm:grid-cols-2 gap-8">
         <Card className="bg-white/10 backdrop-blur-md">
           <CardHeader>
