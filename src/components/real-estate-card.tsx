@@ -52,7 +52,7 @@ export default function RealEstateCards() {
         toast.success(
           "We've received your message and will get back to you soon.",
           {
-            duration: 5000,
+            duration: 2000,
           }
         );
         setFormData({ name: "", email: "", message: "", phone: "" });
