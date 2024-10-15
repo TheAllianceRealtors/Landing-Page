@@ -2,7 +2,7 @@
 
 import { useCallback } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Mail, Phone, Globe, Instagram } from "lucide-react";
+import { ArrowRight, Mail, Phone, Globe, Instagram, Link } from "lucide-react";
 import Image from "next/image";
 import { Parallax } from "react-parallax";
 import { Button } from "@/components/ui/button";
@@ -137,7 +137,7 @@ export function LandingPageComponent() {
                 size="lg"
                 className="bg-red-600 hover:bg-red-700 text-white text-xl py-6 px-8"
               >
-                <a href="#contact">
+                <a href="https://app.thealliancerealtorsgroup.com">
                   Join Us <ArrowRight className="ml-2 w-6 h-6" />
                 </a>
               </Button>
@@ -529,7 +529,9 @@ export function LandingPageComponent() {
                       our expertise and extensive marketing network.
                     </p>
                     <Button className="bg-red-600 hover:bg-red-700 text-white">
-                      Partner with Us <ArrowRight className="ml-2 w-4 h-4" />
+                      <Link href="https://app.thealliancerealtorsgroup.com">
+                        Partner with Us <ArrowRight className="ml-2 w-4 h-4" />
+                      </Link>
                     </Button>
                   </CardContent>
                 </Card>
@@ -545,7 +547,9 @@ export function LandingPageComponent() {
                       group and unlock unlimited potential for wealth creation.
                     </p>
                     <Button className="bg-red-600 hover:bg-red-700 text-white">
-                      Join Our Network <ArrowRight className="ml-2 w-4 h-4" />
+                      <Link href="https://app.thealliancerealtorsgroup.com">
+                        Join Our Network <ArrowRight className="ml-2 w-4 h-4" />
+                      </Link>
                     </Button>
                   </CardContent>
                 </Card>
@@ -612,7 +616,7 @@ export function LandingPageComponent() {
               Contact Us
             </motion.h2>
             <motion.div
-              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+              className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 md:gap-4 lg:gap-8"
               {...fadeInUp}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
