@@ -28,6 +28,8 @@ import zainabOtubambo from "@/app/images/zainab-otubambo.jpeg";
 import whyJoinUs from "@/app/images/why-join-us.jpg";
 import developerCentric from "@/app/images/developer-centric.jpg";
 import training from "@/app/images/training.jpg";
+import hero from "@/app/images/hero.jpg";
+import experts from "@/app/images/experts.jpg";
 
 export function LandingPageComponent() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()]);
@@ -101,7 +103,7 @@ export function LandingPageComponent() {
             transition={{ duration: 10, ease: "easeOut" }}
           >
             <Image
-              src="https://img.freepik.com/free-photo/group-afro-americans-working-together_1303-8971.jpg?t=st=1728973002~exp=1728976602~hmac=8dceffae7dd31dfe419fa2fa72323aecc0cf4b1d00379e12616dae181a92ec23&w=2000"
+              src={hero}
               alt="Modern building"
               layout="fill"
               objectFit="cover"
@@ -351,8 +353,7 @@ export function LandingPageComponent() {
                     title: "Expertise in Real Estate Marketing",
                     description:
                       "With a deep understanding of the real estate landscape in Nigeria, we provide our partners with the strategic insights and marketing power they need to achieve extraordinary results.",
-                    image:
-                      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    image: experts,
                   },
                   {
                     title: "Wealth Creation for Realtors",
