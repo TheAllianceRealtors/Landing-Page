@@ -648,10 +648,10 @@ export function LandingPageComponent() {
                     href={item.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex flex-col items-center group"
+                    className="flex flex-col items-center group "
                   >
                     {item.icon}
-                    <span className="mt-2 text-lg group-hover:text-red-600 transition-colors">
+                    <span className=" px-2 mt-2 text-md group-hover:text-red-600 transition-colors">
                       {item.content}
                     </span>
                   </a>
