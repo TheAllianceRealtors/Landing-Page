@@ -30,6 +30,7 @@ import developerCentric from "@/app/images/developer-centric.jpg";
 import training from "@/app/images/training.jpg";
 import hero from "@/app/images/hero.jpg";
 import experts from "@/app/images/experts.jpg";
+import impact from "@/app/images/impact.jpg";
 
 export function LandingPageComponent() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()]);
@@ -192,8 +193,7 @@ export function LandingPageComponent() {
                       title: "Our Impact",
                       content:
                         "Empowering a network of realtors across the continent and fostering growth in Africa's booming real estate sector.",
-                      image:
-                        "https://img.freepik.com/free-photo/young-businessman-holding-disposable-coffee-cup-showing-newspaper-toward-camera_23-2148190726.jpg?t=st=1728976872~exp=1728980472~hmac=e822f8efed76cf5dbc8f2160e40663b594284ece0c569c7aa932ec9f35e026fb&w=2000",
+                      image: impact,
                     },
                   ].map((item, index) => (
                     <div
@@ -629,8 +629,8 @@ export function LandingPageComponent() {
                 },
                 {
                   icon: <Globe className="w-8 h-8 text-red-600" />,
-                  content: "theallianceafrica.com",
-                  href: "https://theallianceafrica.com",
+                  content: "thealliancerealtorsgroup.com",
+                  href: "https://thealliancerealtorsgroup.com",
                 },
                 {
                   icon: <Instagram className="w-8 h-8 text-red-600" />,
@@ -642,7 +642,7 @@ export function LandingPageComponent() {
                   key={index}
                   variant="outline"
                   asChild
-                  className="h-auto py-6 text-left justify-start bg-gray-800 hover:bg-gray-700"
+                  className="h-auto py-6 px-2 text-left justify-start bg-gray-800 hover:bg-gray-700"
                 >
                   <a
                     href={item.href}
