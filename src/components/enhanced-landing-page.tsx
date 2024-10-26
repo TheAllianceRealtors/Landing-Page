@@ -45,6 +45,7 @@ import experts from "@/app/images/experts.jpg";
 import impact from "@/app/images/impact.jpg";
 import RealEstateCards from "./real-estate-card";
 import Link from "next/link";
+import LogoCarousel from "./logo-carousel";
 export function LandingPageComponent() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()]);
 
@@ -211,23 +212,17 @@ export function LandingPageComponent() {
           </div>
         </section>
 
-        <Parallax
-          bgImage="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=2946&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          strength={500}
-          bgImageStyle={{ objectFit: "cover", objectPosition: "center" }}
-          className="relative"
-        >
-          <section id="about" className="py-24">
-            <div className="absolute inset-0 bg-black opacity-50"></div>
+        <Parallax className="relative">
+          <section id="about" className="py-24 text-black">
             <div className="container mx-auto px-4 sm:px-6 relative z-10">
               <motion.h2
-                className="text-4xl sm:text-5xl font-bold mb-10 text-center text-white"
+                className="text-4xl sm:text-5xl font-bold mb-10 text-center"
                 {...fadeInUp}
               >
                 Who We Are
               </motion.h2>
               <motion.p
-                className="text-xl mb-16 max-w-3xl mx-auto text-center text-white"
+                className="text-xl mb-16 max-w-3xl mx-auto text-center"
                 {...fadeInUp}
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
@@ -274,12 +269,12 @@ export function LandingPageComponent() {
                           className="w-full h-48 object-cover"
                         />
                         <CardHeader>
-                          <CardTitle className="text-2xl font-bold text-white">
+                          <CardTitle className="text-2xl font-bold">
                             {item.title}
                           </CardTitle>
                         </CardHeader>
                         <CardContent>
-                          <p className="text-white">{item.content}</p>
+                          <p className="">{item.content}</p>
                         </CardContent>
                       </Card>
                     </div>
@@ -291,7 +286,7 @@ export function LandingPageComponent() {
                   variant="outline"
                   size="icon"
                   onClick={scrollPrev}
-                  className="mr-2 bg-white/10 hover:bg-white/20 text-white"
+                  className="mr-2 bg-white/10 hover:bg-white/20 text-black"
                 >
                   <ArrowRight className="h-4 w-4 rotate-180" />
                 </Button>
@@ -299,7 +294,7 @@ export function LandingPageComponent() {
                   variant="outline"
                   size="icon"
                   onClick={scrollNext}
-                  className="bg-white/10 hover:bg-white/20 text-white"
+                  className="bg-white/10 hover:bg-white/20 text-black"
                 >
                   <ArrowRight className="h-4 w-4" />
                 </Button>
@@ -308,17 +303,11 @@ export function LandingPageComponent() {
           </section>
         </Parallax>
 
-        <Parallax
-          bgImage="https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=2901&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          strength={500}
-          bgImageStyle={{ objectFit: "cover", objectPosition: "center" }}
-          className="relative bg-cover"
-        >
+        <Parallax strength={500} className="relative">
           <section id="services" className="py-24">
-            <div className="absolute inset-0 bg-black opacity-50"></div>
-            <div className="container mx-auto px-4 sm:px-6 relative z-10">
+            <div className="container mx-auto px-4 sm:px-6 relative z-10 text-black">
               <motion.h2
-                className="text-4xl sm:text-5xl font-bold mb-16 text-center text-white"
+                className="text-4xl sm:text-5xl font-bold mb-16 text-center text-black"
                 {...fadeInUp}
               >
                 Our Services
@@ -373,14 +362,12 @@ export function LandingPageComponent() {
                     >
                       <CardHeader className="flex flex-col items-center">
                         <Icon className="w-12 h-12 text-red-500 mb-4" />
-                        <CardTitle className="text-2xl font-bold text-white text-center">
+                        <CardTitle className="text-2xl font-bold  text-center">
                           {service.title}
                         </CardTitle>
                       </CardHeader>
                       <CardContent>
-                        <p className="text-white text-center">
-                          {service.description}
-                        </p>
+                        <p className=" text-center">{service.description}</p>
                       </CardContent>
                     </Card>
                   );
@@ -390,17 +377,11 @@ export function LandingPageComponent() {
           </section>
         </Parallax>
 
-        <Parallax
-          bgImage="https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          strength={500}
-          bgImageStyle={{ objectFit: "cover", objectPosition: "center" }}
-          className="relative bg-cover"
-        >
-          <section id="why-choose-us" className="py-24">
-            <div className="absolute inset-0 bg-black opacity-50"></div>
+        <Parallax className="relative bg-cover">
+          <section id="why-choose-us" className="py-24 text-black">
             <div className="container mx-auto px-4 sm:px-6 relative z-10">
               <motion.h2
-                className="text-4xl sm:text-5xl font-bold mb-16 text-center text-white"
+                className="text-4xl sm:text-5xl font-bold mb-16 text-center"
                 {...fadeInUp}
               >
                 Why Partner with The Alliance Realtors Group?
@@ -449,12 +430,12 @@ export function LandingPageComponent() {
                       className="w-full"
                     />
                     <CardHeader>
-                      <CardTitle className="text-2xl font-bold text-white">
+                      <CardTitle className="text-2xl font-bold">
                         {reason.title}
                       </CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-white">{reason.description}</p>
+                      <p>{reason.description}</p>
                     </CardContent>
                   </Card>
                 ))}
@@ -463,23 +444,17 @@ export function LandingPageComponent() {
           </section>
         </Parallax>
 
-        <Parallax
-          bgImage="https://images.unsplash.com/photo-1522071901873-411886a10004?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          strength={500}
-          bgImageStyle={{ objectFit: "cover", objectPosition: "center" }}
-          className="relative bg-cover"
-        >
-          <section id="team" className="py-24">
-            <div className="absolute inset-0 bg-black opacity-50"></div>
+        <Parallax className="relative bg-cover">
+          <section id="team" className="py-24 text-black">
             <div className="container mx-auto px-4 sm:px-6 relative z-10">
               <motion.h2
-                className="text-4xl sm:text-5xl font-bold mb-10 text-center text-white"
+                className="text-4xl sm:text-5xl font-bold mb-10 text-center "
                 {...fadeInUp}
               >
                 Meet Our Team
               </motion.h2>
               <motion.p
-                className="text-xl mb-16 max-w-3xl mx-auto text-center text-white"
+                className="text-xl mb-16 max-w-3xl mx-auto text-center "
                 {...fadeInUp}
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
@@ -548,10 +523,10 @@ export function LandingPageComponent() {
                       className="w-full"
                     />
                     <CardHeader className="p-2 md:p-6">
-                      <CardTitle className="text-sm md:text-xl font-bold text-white">
+                      <CardTitle className="text-sm md:text-xl font-bold">
                         {member.name}
                       </CardTitle>
-                      <p className="text-xs md:text-md text-white/80">
+                      <p className="text-xs md:text-md text-black/80">
                         {member.role}
                       </p>
                     </CardHeader>
@@ -561,6 +536,7 @@ export function LandingPageComponent() {
             </div>
           </section>
         </Parallax>
+        <LogoCarousel />
 
         <section id="call-to-action" className="py-24 bg-gray-900 text-white">
           <div className="container mx-auto px-4 sm:px-6">
