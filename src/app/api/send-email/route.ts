@@ -121,7 +121,7 @@ export async function POST(req: Request) {
 
   const mailOptions = {
     from: process.env.ZOHO_EMAIL_USERNAME as string,
-    to: "techmornach@gmail.com",
+    to: "thealliancerealtorsgroup@gmail.com",
     subject: "Real Estate Developers Inquiry",
     html: htmlContent,
     attachments: validAttachments,
