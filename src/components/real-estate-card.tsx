@@ -38,7 +38,7 @@ export default function RealEstateCards() {
               </DialogTrigger>
               <DialogContent className="sm:max-w-[425px]">
                 <DialogHeader>
-                  <DialogTitle>Contact Us</DialogTitle>
+                  <DialogTitle>Developer Partnership Form</DialogTitle>
                 </DialogHeader>
                 <Form close={setIsModalOpen} />
               </DialogContent>
