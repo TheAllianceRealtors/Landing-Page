@@ -104,7 +104,7 @@ const Form: React.FC<FormProps> = ({ close }) => {
       setFormError("An error occurred. Please try again.");
     } finally {
       setIsLoading(false);
-      close(true);
+      close(false);
     }
   };
 
